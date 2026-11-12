@@ -54,7 +54,7 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
 .part{margin:32px 0}
 .shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .shots img{width:100%;height:280px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:6px}
-.part figcaption{margin-top:12px}.part p{margin:0;color:var(--steel)}
+.part figcaption{margin-top:12px}.part p{margin:0;color:var(--steel)}.part .tools{font-size:.9rem;margin:4px 0}
 </style>
 </head>
 <body>
@@ -68,7 +68,7 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
 </ul>
 <nav class="toc" aria-label="Contents">
 <a href="#turbojet">Afterburning turbojet analysis<span>93 kN of thrust at 2,800 m</span></a>
-<a href="#cad">SolidWorks CAD models<span>Brackets, housings, wheels, and a wing</span></a>
+<a href="#cad">SolidWorks CAD models<span>Bezel, steering wheel, bracket, spool, and airfoil</span></a>
 <a href="#background">Background<span>Education, research, and leadership</span></a>
 </nav>
 </header>
@@ -122,12 +122,12 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
 
 <section class="cad" id="cad" aria-labelledby="cadh">
 <h2 id="cadh">SolidWorks CAD models</h2>
-<p>Parts and assemblies I’ve modeled while teaching myself SolidWorks, from a keyed shaft bracket to a wing with ribs, spars, and skin.</p>
-<figure class="part"><div class="shots"><img src="images/bracket-iso.png" alt="Isometric view of a bracket with a keyed round bore, a tab with a hole, and a slotted foot" loading="lazy"><img src="images/bracket-side.png" alt="Side view of the bracket showing the keyway, tab, and foot" loading="lazy"></div><figcaption><h3>Shaft bracket</h3><p>A bracket with a keyed shaft bore, a clevis tab, a slotted mounting foot, and a bolted flange.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/housing-front.png" alt="Front view of a housing with five teardrop vent slots and a ring of small slots" loading="lazy"><img src="images/housing-iso.png" alt="Angled view of the housing showing its bolt bosses and walls" loading="lazy"><img src="images/housing-back.png" alt="Exterior view of the housing with the slotted face" loading="lazy"></div><figcaption><h3>Vented housing</h3><p>A cover with five swept vent slots, a ring of small cooling slots around a central bore, and three bolt bosses.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/handwheel-iso.png" alt="Angled view of a black six-spoke handwheel" loading="lazy"><img src="images/handwheel-front.png" alt="Front view of the handwheel" loading="lazy"></div><figcaption><h3>Six-spoke handwheel</h3><p>A handwheel with a rounded rim, six spokes, and a stepped hub.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/wheel-iso.png" alt="Angled view of a wheel with swept blades between two rims" loading="lazy"><img src="images/wheel-side.png" alt="Side view of the wheel showing the blade sweep" loading="lazy"></div><figcaption><h3>Swept-blade wheel</h3><p>An open-frame wheel with curved blades running between two rims and a central hub.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/wing.png" alt="Wing model with ribs and spars exposed and skin covering the root section" loading="lazy"></div><figcaption><h3>Wing structure</h3><p>A wing section with ribs, spars, and stringers, with the skin shown over part of the span.</p></figcaption></figure>
+<p>Parts and assemblies I’ve modeled while teaching myself SolidWorks, from a Bluetooth bezel to an airfoil.</p>
+<figure class="part"><div class="shots"><img src="images/housing-front.png" alt="Front view of the bezel with five teardrop vent slots and a ring of small slots" loading="lazy"><img src="images/housing-iso.png" alt="Angled view of the bezel showing its bolt bosses and walls" loading="lazy"><img src="images/housing-back.png" alt="Exterior view of the bezel with the slotted face" loading="lazy"></div><figcaption><h3>Bluetooth bezel</h3><p class="tools"><b>Tools:</b> Fillet, Chamfer, Boss-Extrude, Shell, Cut-Extrude, Circular Pattern</p><p>Modeled a Bluetooth bezel to replicate a real-world one.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/handwheel-iso.png" alt="Angled view of a black six-spoke steering wheel" loading="lazy"><img src="images/handwheel-front.png" alt="Front view of the steering wheel" loading="lazy"></div><figcaption><h3>Steering wheel</h3><p class="tools"><b>Tools:</b> Revolve, Sweep, Circular Pattern, Fillet, Screw</p><p>Modeled a steering wheel to replicate a real-world one.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/bracket-iso.png" alt="Isometric view of a bracket with a keyed round bore, a hinge tab, and a slotted foot" loading="lazy"><img src="images/bracket-side.png" alt="Side view of the bracket showing the keyway, tab, and foot" loading="lazy"></div><figcaption><h3>Hinged slot bracket</h3><p class="tools"><b>Tools:</b> Boss-Extrude, Cut-Extrude, Fillet, Offset Surface</p><p>Modeled a hinged slot bracket as a personal project.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/wheel-iso.png" alt="Angled view of a spool with swept spokes between two rims" loading="lazy"><img src="images/wheel-side.png" alt="Side view of the spool showing the spoke sweep" loading="lazy"></div><figcaption><h3>Spoked spool</h3><p class="tools"><b>Tools:</b> Fillet, Revolve, Rib, Circular Pattern, Revolve Cut</p><p>Modeled a spoked spool as a personal project.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/wing.png" alt="Airfoil model with ribs and spars exposed and skin covering the root section" loading="lazy"></div><figcaption><h3>Airfoil</h3><p class="tools"><b>Tools:</b> Boss-Extrude, Offset Plane, Loft, Mirror</p><p>Used NACA airfoil coordinates to model an airfoil to replicate a real-world one.</p></figcaption></figure>
 </section>
 
 <h2>More work</h2>
