@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Justin Sterlin | Aerospace Engineering Portfolio</title>
+<meta name="description" content="An ever-growing page of engineering projects by Justin Sterlin, an aerospace engineering student at Texas A&M.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#eef2f6;--panel:#f8fafc;--ink:#14232f;--steel:#52687a;--line:#c5d1dc;--cool:#2a7f9e;--hot:#c8452b}
+@media (prefers-color-scheme:dark){:root{--paper:#101a23;--panel:#16232e;--ink:#e6edf3;--steel:#9fb2c2;--line:#2b3d4c;--cool:#5bb4d1;--hot:#ef7a5f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:48px 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.4rem,6vw,3.6rem);font-weight:700}
+h2{font-size:1.7rem;font-weight:700;margin:64px 0 16px}
+h3{font-size:1.15rem;font-weight:500;margin:0 0 4px}
+a{color:var(--cool)}
+a:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.tag{color:var(--steel);margin:8px 0 20px;max-width:60ch}
+.links{display:flex;flex-wrap:wrap;gap:8px 24px;padding:0;list-style:none;margin:0}
+.links a{font-weight:500}
+.hero,.cad{margin-top:24px;border-top:2px solid var(--ink);padding-top:24px}
+.hero h2,.cad h2{margin-top:0;font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.hero p,.cad p{max-width:62ch}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px;overflow-x:auto;margin:24px 0}
+.chart svg{min-width:560px;width:100%;height:auto;display:block}
+.chart text{fill:var(--steel);font:12px "IBM Plex Sans",sans-serif}
+.chart .v{fill:var(--ink);font-weight:500}
+.cap{font-size:.9rem;color:var(--steel);margin:8px 0 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--panel)}
+.stats div{padding:16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.stats b{display:block;font:700 1.6rem "Bricolage Grotesque",sans-serif}
+.stats span{font-size:.9rem;color:var(--steel)}
+table{border-collapse:collapse;width:100%;font-size:.95rem;margin:16px 0}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:500;color:var(--steel)}
+.scroll{overflow-x:auto}
+.work{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.work p{margin:4px 0 0;color:var(--steel)}
+.work div{border-left:3px solid var(--cool);padding-left:16px}
+footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:var(--steel);font-size:.9rem}
+.cover{min-height:82vh;display:flex;flex-direction:column;justify-content:center;padding:24px 0 48px}
+.cover h1{font-size:clamp(3rem,11vw,6.5rem);letter-spacing:-.02em}
+.cover .tag{font-size:1.2rem}
+.toc{margin-top:56px;border-top:2px solid var(--ink)}
+.toc a{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:500}
+.toc a:hover{color:var(--cool)}
+.toc span{color:var(--steel);font-weight:400;text-align:right}
+.cad{margin-top:96px}
+.part{margin:32px 0}
+.shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.shots img{width:100%;height:280px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:6px}
+.part figcaption{margin-top:12px}.part p{margin:0;color:var(--steel)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="cover">
+<h1>Justin Sterlin</h1>
+<p class="tag">This is my ever-growing page for my engineering projects. I’m an aerospace engineering student at Texas A&amp;M University (minor in Japanese), and I’m teaching myself SolidWorks along the way.</p>
+<ul class="links">
+<li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE">LinkedIn</a></li>
+<li><a href="mailto:justinsterlin@tamu.edu">justinsterlin@tamu.edu</a></li>
+</ul>
+<nav class="toc" aria-label="Contents">
+<a href="#turbojet">Afterburning turbojet analysis<span>93 kN of thrust at 2,800 m</span></a>
+<a href="#cad">SolidWorks CAD models<span>Brackets, housings, wheels, and a wing</span></a>
+<a href="#background">Background<span>Education, research, and leadership</span></a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="turbojet" aria-labelledby="jet">
+<h2 id="jet">Afterburning turbojet: 93 kN of thrust at 2,800 m</h2>
+<p>For my final propulsion project I modeled a complete turbojet cycle from inlet to nozzle, then sized the heat addition, work balance, and exit conditions by hand. Starting from 78 kg/s of airflow at Mach 0.51, the cycle heats the air from 270 K to 2,218 K.</p>
+<div class="chart">
+<svg viewBox="0 0 700 270" role="img" aria-label="Line chart of gas temperature at six engine stations: 270 K at the inlet, 791 K after the compressor, 1,528 K entering the turbine, 1,016 K leaving it, 2,218 K after the afterburner, and 1,898 K at the nozzle exit.">
+<line x1="30" y1="220" x2="670" y2="220" stroke="var(--line)"/>
+<polyline fill="none" stroke="var(--hot)" stroke-width="3" points="60,198.6 175,157.4 290,99 405,139.6 520,44.4 635,69.8"/>
+<g fill="var(--hot)"><circle cx="60" cy="198.6" r="5"/><circle cx="175" cy="157.4" r="5"/><circle cx="290" cy="99" r="5"/><circle cx="405" cy="139.6" r="5"/><circle cx="520" cy="44.4" r="5"/><circle cx="635" cy="69.8" r="5"/></g>
+<g class="v" text-anchor="middle"><text class="v" x="60" y="184">270 K</text><text class="v" x="175" y="143">791 K</text><text class="v" x="290" y="85">1,528 K</text><text class="v" x="405" y="125">1,016 K</text><text class="v" x="520" y="30">2,218 K</text><text class="v" x="635" y="55">1,898 K</text></g>
+<g text-anchor="middle"><text x="60" y="240">Inlet</text><text x="175" y="240">Compressor exit</text><text x="290" y="240">Turbine inlet</text><text x="405" y="240">Turbine exit</text><text x="520" y="240">Afterburner exit</text><text x="635" y="240">Nozzle exit</text></g>
+</svg>
+</div>
+<p class="cap">Total gas temperature through the engine. The nozzle exit value is the static temperature after expansion.</p>
+
+<div class="stats" style="margin-top:24px">
+<div><b>93.5 kN</b><span>Net thrust with afterburner</span></div>
+<div><b>40:1</b><span>Overall pressure ratio, 14 stages at 1.30 each</span></div>
+<div><b>40.8 MW</b><span>Compressor power, 523 kJ per kg of air</span></div>
+<div><b>157 MW</b><span>Total heat added from JP-8 (58.7 MW main, 98.6 MW afterburner)</span></div>
+<div><b>802 m/s</b><span>Nozzle exit velocity</span></div>
+<div><b>0.14 kg/(N&middot;h)</b><span>Thrust-specific fuel consumption (38.9 mg/(N&middot;s))</span></div>
+</div>
+
+<h3 style="margin-top:40px">Inputs I was given</h3>
+<div class="scroll"><table>
+<tr><th>Component</th><th>Specification</th></tr>
+<tr><td>Flight condition</td><td>2,800 m altitude, 71.9 kPa, 270 K, 166.7 m/s (Mach 0.51), 0.5 m&sup2; inlet, 77.96 kg/s of air</td></tr>
+<tr><td>Compressor</td><td>14 stages, 0.98 stage efficiency, overall pressure ratio 40</td></tr>
+<tr><td>Combustor</td><td>JP-8, 43,260 kJ/kg heating value, 1.36 kg/s of fuel (4,888 kg/h)</td></tr>
+<tr><td>Turbine</td><td>4 stages, 0.95 stage efficiency</td></tr>
+<tr><td>Afterburner</td><td>JP-8, 2.28 kg/s of fuel (8,206 kg/h)</td></tr>
+<tr><td>Nozzle</td><td>0.15 m&sup2; exit area, 0.90 efficiency</td></tr>
+</table></div>
+
+<h3 style="margin-top:32px">What I calculated</h3>
+<div class="scroll"><table>
+<tr><th>Station</th><th>Result</th></tr>
+<tr><td>Compressor</td><td>Worked stage by stage with isentropic efficiency, tabulating pressure, density, temperature, and enthalpy at every station. Exit state: 2.88 MPa and 791 K.</td></tr>
+<tr><td>Combustor</td><td>Fuel-air ratio of 0.0174 raises the gas to 1,528 K.</td></tr>
+<tr><td>Turbine</td><td>Extracts exactly the compressor&rsquo;s 40.8 MW, a 512 K drop and a 4.5:1 pressure ratio, leaving 0.64 MPa at 1,016 K.</td></tr>
+<tr><td>Afterburner</td><td>Reheats the flow by about 1,200 K to 2,218 K.</td></tr>
+<tr><td>Nozzle</td><td>The 0.15 m&sup2; exit area matches the choked flow condition at this mass flow, so the nozzle exits near sonic at about 345 kPa.</td></tr>
+</table></div>
+<p class="cap">Assumptions: cold-air standard (R&nbsp;=&nbsp;287 J/kg&middot;K, c<sub>p</sub>&nbsp;=&nbsp;1.005 kJ/kg&middot;K, k&nbsp;=&nbsp;1.4), complete combustion, no pressure loss in the burners, and a turbine that drives only the compressor.</p>
+</section>
+
+<section class="cad" id="cad" aria-labelledby="cadh">
+<h2 id="cadh">SolidWorks CAD models</h2>
+<p>Parts and assemblies I’ve modeled while teaching myself SolidWorks, from a keyed shaft bracket to a wing with ribs, spars, and skin.</p>
+<figure class="part"><div class="shots"><img src="images/bracket-iso.png" alt="Isometric view of a bracket with a keyed round bore, a tab with a hole, and a slotted foot" loading="lazy"><img src="images/bracket-side.png" alt="Side view of the bracket showing the keyway, tab, and foot" loading="lazy"></div><figcaption><h3>Shaft bracket</h3><p>A bracket with a keyed shaft bore, a clevis tab, a slotted mounting foot, and a bolted flange.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/housing-front.png" alt="Front view of a housing with five teardrop vent slots and a ring of small slots" loading="lazy"><img src="images/housing-iso.png" alt="Angled view of the housing showing its bolt bosses and walls" loading="lazy"><img src="images/housing-back.png" alt="Exterior view of the housing with the slotted face" loading="lazy"></div><figcaption><h3>Vented housing</h3><p>A cover with five swept vent slots, a ring of small cooling slots around a central bore, and three bolt bosses.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/handwheel-iso.png" alt="Angled view of a black six-spoke handwheel" loading="lazy"><img src="images/handwheel-front.png" alt="Front view of the handwheel" loading="lazy"></div><figcaption><h3>Six-spoke handwheel</h3><p>A handwheel with a rounded rim, six spokes, and a stepped hub.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/wheel-iso.png" alt="Angled view of a wheel with swept blades between two rims" loading="lazy"><img src="images/wheel-side.png" alt="Side view of the wheel showing the blade sweep" loading="lazy"></div><figcaption><h3>Swept-blade wheel</h3><p>An open-frame wheel with curved blades running between two rims and a central hub.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/wing.png" alt="Wing model with ribs and spars exposed and skin covering the root section" loading="lazy"></div><figcaption><h3>Wing structure</h3><p>A wing section with ribs, spars, and stringers, with the skin shown over part of the span.</p></figcaption></figure>
+</section>
+
+<h2>More work</h2>
+<section class="work">
+<div><h3>Rocketry, SEDS at Texas A&amp;M</h3><p>Designed, built, and launched a B-motor rocket on my own, using SolidWorks and CAD. Sponsored to attend SpaceVision 2026, the national SEDS-USA conference.</p></div>
+<div><h3>International research in Yucatán</h3><p>Led a team of 6 on a comparative study of youth suicide mortality in Yucatán and Texas, drawing on INEGI and CDC data and 15+ sources. Proposed a mandatory mental health curriculum starting in 5th grade.</p></div>
+<div><h3>Design and communications</h3><p>As Public Relations Officer for the Aggie Society for Anime and Manga Art, I designed 80+ graphics and flyers and grew membership 45%, from 1,000 to 1,450.</p></div>
+</section>
+
+<h2 id="background">Background</h2>
+<p>B.S. in Aerospace Engineering, Texas A&amp;M University, expected May 2028. Gates Scholar and Posse Scholar. Coursework includes aerodynamics, high-speed aerodynamics, aerothermodynamics, and aerostructural analysis. Tools: MATLAB, Python, SolidWorks.</p>
+</main>
+
+<footer>Justin Sterlin, College Station, Texas</footer>
+</div>
+</body>
+</html>
