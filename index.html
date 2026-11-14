@@ -55,28 +55,36 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
 .shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .shots img{width:100%;height:280px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:6px}
 .part figcaption{margin-top:12px}.part p{margin:0;color:var(--steel)}.part .tools{font-size:.9rem;margin:4px 0}
+.sub{font-size:1.25rem;font-weight:500;color:var(--steel);margin:8px 0 16px}
+.bg h2{font-size:1.3rem;margin:32px 0 8px}
+.bg p{max-width:62ch;margin:0}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="cover">
 <h1>Justin Sterlin</h1>
-<p class="tag">This is my ever-growing page for my engineering projects. I’m an aerospace engineering student at Texas A&amp;M University (minor in Japanese), and I’m teaching myself SolidWorks along the way.</p>
+<p class="tag">This is my ever-growing page for my engineering projects and professional involvements. As an aerospace engineering student at Texas A&amp;M University, I have a passion for space flight and the drive to actualize my ideas. Below is an overview of my curricular and extracurricular achievements, including a self-taught knowledge of SolidWorks Design software.</p>
+<section class="bg" aria-labelledby="bgh">
+<h2 id="bgh">Background</h2>
+<p>B.S. in Aerospace Engineering with a minor in Japanese, Texas A&amp;M University, expected graduation May 2028. Gates Scholar and Posse Scholar. Coursework includes aerodynamics, high-speed aerodynamics, aerothermodynamics, and aerostructural analysis. Tools: MATLAB, Python, SolidWorks.</p>
+</section>
 <ul class="links">
 <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE">LinkedIn</a></li>
 <li><a href="mailto:justinsterlin@tamu.edu">justinsterlin@tamu.edu</a></li>
 </ul>
 <nav class="toc" aria-label="Contents">
-<a href="#turbojet">Afterburning turbojet analysis<span>93 kN of thrust at 2,800 m</span></a>
-<a href="#cad">SolidWorks CAD models<span>Bezel, steering wheel, bracket, spool, and airfoil</span></a>
-<a href="#background">Background<span>Education, research, and leadership</span></a>
+<a href="#turbojet">Afterburning Turbojet Analysis<span>93 kN of thrust at 2,800 m</span></a>
+<a href="#cad">SolidWorks CAD Models<span>Bezel, steering wheel, bracket, spool, and airfoil</span></a>
+<a href="#experience">Other Experience<span>Rocketry, research, and design</span></a>
 </nav>
 </header>
 
 <main>
 <section class="hero" id="turbojet" aria-labelledby="jet">
-<h2 id="jet">Afterburning turbojet: 93 kN of thrust at 2,800 m</h2>
-<p>For my final propulsion project I modeled a complete turbojet cycle from inlet to nozzle, then sized the heat addition, work balance, and exit conditions by hand. Starting from 78 kg/s of airflow at Mach 0.51, the cycle heats the air from 270 K to 2,218 K.</p>
+<h2 id="jet">Afterburning Turbojet Analysis</h2>
+<h3 class="sub">93 kN of Thrust at 2,800 m</h3>
+<p>For my final propulsion project, I modeled a complete turbojet cycle from inlet to nozzle, then sized the heat addition, work balance, and exit conditions by hand. Starting from 78 kg/s of airflow at Mach 0.51, the cycle heats the air from 270 K to 2,218 K.</p>
 <div class="chart">
 <svg viewBox="0 0 700 270" role="img" aria-label="Line chart of gas temperature at six engine stations: 270 K at the inlet, 791 K after the compressor, 1,528 K entering the turbine, 1,016 K leaving it, 2,218 K after the afterburner, and 1,898 K at the nozzle exit.">
 <line x1="30" y1="220" x2="670" y2="220" stroke="var(--line)"/>
@@ -97,18 +105,18 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
 <div><b>0.14 kg/(N&middot;h)</b><span>Thrust-specific fuel consumption (38.9 mg/(N&middot;s))</span></div>
 </div>
 
-<h3 style="margin-top:40px">Inputs I was given</h3>
+<h3 style="margin-top:40px">Inputs I Was Given</h3>
 <div class="scroll"><table>
 <tr><th>Component</th><th>Specification</th></tr>
 <tr><td>Flight condition</td><td>2,800 m altitude, 71.9 kPa, 270 K, 166.7 m/s (Mach 0.51), 0.5 m&sup2; inlet, 77.96 kg/s of air</td></tr>
 <tr><td>Compressor</td><td>14 stages, 0.98 stage efficiency, overall pressure ratio 40</td></tr>
 <tr><td>Combustor</td><td>JP-8, 43,260 kJ/kg heating value, 1.36 kg/s of fuel (4,888 kg/h)</td></tr>
-<tr><td>Turbine</td><td>4 stages, 0.95 stage efficiency</td></tr>
+<tr><td>Turbine</td><td>Four stages, 0.95 stage efficiency</td></tr>
 <tr><td>Afterburner</td><td>JP-8, 2.28 kg/s of fuel (8,206 kg/h)</td></tr>
 <tr><td>Nozzle</td><td>0.15 m&sup2; exit area, 0.90 efficiency</td></tr>
 </table></div>
 
-<h3 style="margin-top:32px">What I calculated</h3>
+<h3 style="margin-top:32px">What I Calculated</h3>
 <div class="scroll"><table>
 <tr><th>Station</th><th>Result</th></tr>
 <tr><td>Compressor</td><td>Worked stage by stage with isentropic efficiency, tabulating pressure, density, temperature, and enthalpy at every station. Exit state: 2.88 MPa and 791 K.</td></tr>
@@ -121,24 +129,22 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
 </section>
 
 <section class="cad" id="cad" aria-labelledby="cadh">
-<h2 id="cadh">SolidWorks CAD models</h2>
-<p>Parts and assemblies I’ve modeled while teaching myself SolidWorks, from a Bluetooth bezel to an airfoil.</p>
-<figure class="part"><div class="shots"><img src="images/housing-front.png" alt="Front view of the bezel with five teardrop vent slots and a ring of small slots" loading="lazy"><img src="images/housing-iso.png" alt="Angled view of the bezel showing its bolt bosses and walls" loading="lazy"><img src="images/housing-back.png" alt="Exterior view of the bezel with the slotted face" loading="lazy"></div><figcaption><h3>Bluetooth bezel</h3><p class="tools"><b>Tools:</b> Fillet, Chamfer, Boss-Extrude, Shell, Cut-Extrude, Circular Pattern</p><p>Modeled a Bluetooth bezel to replicate a real-world one.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/handwheel-iso.png" alt="Angled view of a black six-spoke steering wheel" loading="lazy"><img src="images/handwheel-front.png" alt="Front view of the steering wheel" loading="lazy"></div><figcaption><h3>Steering wheel</h3><p class="tools"><b>Tools:</b> Revolve, Sweep, Circular Pattern, Fillet, Screw</p><p>Modeled a steering wheel to replicate a real-world one.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/bracket-iso.png" alt="Isometric view of a bracket with a keyed round bore, a hinge tab, and a slotted foot" loading="lazy"><img src="images/bracket-side.png" alt="Side view of the bracket showing the keyway, tab, and foot" loading="lazy"></div><figcaption><h3>Hinged slot bracket</h3><p class="tools"><b>Tools:</b> Boss-Extrude, Cut-Extrude, Fillet, Offset Surface</p><p>Modeled a hinged slot bracket as a personal project.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/wheel-iso.png" alt="Angled view of a spool with swept spokes between two rims" loading="lazy"><img src="images/wheel-side.png" alt="Side view of the spool showing the spoke sweep" loading="lazy"></div><figcaption><h3>Spoked spool</h3><p class="tools"><b>Tools:</b> Fillet, Revolve, Rib, Circular Pattern, Revolve Cut</p><p>Modeled a spoked spool as a personal project.</p></figcaption></figure>
-<figure class="part"><div class="shots"><img src="images/wing.png" alt="Airfoil model with ribs and spars exposed and skin covering the root section" loading="lazy"></div><figcaption><h3>Airfoil</h3><p class="tools"><b>Tools:</b> Boss-Extrude, Offset Plane, Loft, Mirror</p><p>Used NACA airfoil coordinates to model an airfoil to replicate a real-world one.</p></figcaption></figure>
+<h2 id="cadh">SolidWorks CAD Models</h2>
+<p>This is a collection of parts and assemblies I’ve modeled while teaching myself SolidWorks. Familiarizing myself with this industry-standard tool is one of my top priorities as an aspiring aerospace engineer.</p>
+<figure class="part"><div class="shots"><img src="images/housing-front.png" alt="Front view of the bezel with five teardrop vent slots and a ring of small slots" loading="lazy"><img src="images/housing-iso.png" alt="Angled view of the bezel showing its bolt bosses and walls" loading="lazy"><img src="images/housing-back.png" alt="Exterior view of the bezel with the slotted face" loading="lazy"></div><figcaption><h3>Bluetooth Bezel</h3><p class="tools"><b>Tools:</b> Fillet, Chamfer, Boss-Extrude, Shell, Cut-Extrude, Circular Pattern</p><p>Modeled a Bluetooth bezel to replicate its real-world counterpart.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/handwheel-iso.png" alt="Angled view of a black six-spoke steering wheel" loading="lazy"><img src="images/handwheel-front.png" alt="Front view of the steering wheel" loading="lazy"></div><figcaption><h3>Steering Wheel</h3><p class="tools"><b>Tools:</b> Revolve, Sweep, Circular Pattern, Fillet, Screw</p><p>Modeled a steering wheel to replicate its real-world counterpart.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/bracket-iso.png" alt="Isometric view of a bracket with a keyed round bore, a hinge tab, and a slotted foot" loading="lazy"><img src="images/bracket-side.png" alt="Side view of the bracket showing the keyway, tab, and foot" loading="lazy"></div><figcaption><h3>Hinged Slot Bracket</h3><p class="tools"><b>Tools:</b> Boss-Extrude, Cut-Extrude, Fillet, Offset Surface</p><p>Modeled a hinged slot bracket as a personal project.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/wheel-iso.png" alt="Angled view of a spool with swept spokes between two rims" loading="lazy"><img src="images/wheel-side.png" alt="Side view of the spool showing the spoke sweep" loading="lazy"></div><figcaption><h3>Spoked Spool</h3><p class="tools"><b>Tools:</b> Fillet, Revolve, Rib, Circular Pattern, Revolve Cut</p><p>Modeled a spoked spool as a personal project.</p></figcaption></figure>
+<figure class="part"><div class="shots"><img src="images/wing.png" alt="Airfoil model with ribs and spars exposed and skin covering the root section" loading="lazy"></div><figcaption><h3>Airfoil</h3><p class="tools"><b>Tools:</b> Boss-Extrude, Offset Plane, Loft, Mirror</p><p>Used NACA coordinates to model a standardized airfoil.</p></figcaption></figure>
 </section>
 
-<h2>More work</h2>
+<h2 id="experience">Other Experience</h2>
 <section class="work">
-<div><h3>Rocketry, SEDS at Texas A&amp;M</h3><p>Designed, built, and launched a B-motor rocket on my own, using SolidWorks and CAD. Sponsored to attend SpaceVision 2026, the national SEDS-USA conference.</p></div>
-<div><h3>International research in Yucatán</h3><p>Led a team of 6 on a comparative study of youth suicide mortality in Yucatán and Texas, drawing on INEGI and CDC data and 15+ sources. Proposed a mandatory mental health curriculum starting in 5th grade.</p></div>
-<div><h3>Design and communications</h3><p>As Public Relations Officer for the Aggie Society for Anime and Manga Art, I designed 80+ graphics and flyers and grew membership 45%, from 1,000 to 1,450.</p></div>
+<div><h3>Rocketry, SEDS at Texas A&amp;M</h3><p>Independently designed, built, and launched a B-motor rocket, using SolidWorks and CAD. Was sponsored to attend SpaceVision 2026, the national SEDS-USA conference.</p></div>
+<div><h3>International Research in Yucatán</h3><p>Led a team of six on a comparative study of youth suicide mortality in Yucatán and Texas, drawing on INEGI and CDC data and 15+ sources. Proposed a mandatory mental health curriculum starting in fifth grade.</p></div>
+<div><h3>Design and Communications</h3><p>As Public Relations Officer for the Aggie Society for Anime and Manga Art, I designed 80+ graphics and flyers and grew membership by 45%, from 1,000 to 1,450 over a two-year period.</p></div>
 </section>
 
-<h2 id="background">Background</h2>
-<p>B.S. in Aerospace Engineering, Texas A&amp;M University, expected May 2028. Gates Scholar and Posse Scholar. Coursework includes aerodynamics, high-speed aerodynamics, aerothermodynamics, and aerostructural analysis. Tools: MATLAB, Python, SolidWorks.</p>
 </main>
 
 <footer>Justin Sterlin, College Station, Texas</footer>
